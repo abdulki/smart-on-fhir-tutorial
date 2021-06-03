@@ -26,7 +26,7 @@
 				  var alg = smart.patient.api.fetchAll({
                     type: 'AllergyIntolerance',
                     query: {
-                      status: {'active','confirmed','unconfirmed'}
+                      "status": 'active,confirmed,unconfirmed'
                               
                       }
 					});
