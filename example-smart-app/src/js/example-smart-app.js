@@ -95,6 +95,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
+	  allergies: {value: ''}
     };
   }
 
@@ -138,6 +139,8 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
+	$('#alergyInotolerance').html(p.allergies);
+	
   };
 
 })(window);
