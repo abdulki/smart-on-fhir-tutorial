@@ -55,13 +55,14 @@
           var ldl = byCodes('2089-1');
 		  var allergyTable="<table>";
 		  var allergyLen=allergies.length
-		  for (var i=0, len=allergyLen,i++){
+		  for (var i=0,len=allergyLen;i<len;i++){
 			  allergyTable+="<tr><td>"+allergies[i].substance.text+"</td></tr>";
-			  if (allergyLen==0){
+			  
+		  }
+		  if (allergyLen==0){
 				allergyTable+="<tr><td> No Allergies Found</td></tr>";
 			  }
-		  }
-		  
+			allergyTable+="</table>";
 
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
